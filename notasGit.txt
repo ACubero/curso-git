@@ -1,0 +1,47 @@
+Configuración
+git config --global user.name "Alex Cubero" (nombre del usuario GitHub)
+git config --global user.email alexcuar@gmail.com (email del usuario GitHub)
+git config --global core.editor notepad (editor para hacer los commits)
+
+GitDesktop (para windows y mac)
+
+Lineas de comando
+git diff (diferencias)
+git status (saber el estado)
+git add <fichero> (para añadir los cambios al repositorio local)
+git add . (añade todos los cambios)
+git add -p <fichero> (te va preguntando por cada cambio que has hecho en el fichero si quieres añadirlo o no)
+git rm <fichero> (eliminar un fichero que se haya eliminado físicamene para eliminarlo del repositorio local)
+git commit (abre el editor configurado para hacer los commits)
+git commit -m "COMENTARIO" (hace el commit con el texot que pongamos)
+git commit -am "COMENTARIO" (todos los cambios hechos se comitean con el mensaje que ponemos)
+git remote (para saber los repositorios remotos)
+git remote -v (url de los repositorios remotos)
+git push <repositorio remoto> <rama> (subir al repositorio remoto los cambios commiteados)
+Ejemplo: git push origin master
+git pull <repositorio remoto> <rama> (descargar al repositorio local los cambios del repositorio remoto)
+Ejemplo: git pull origin master
+git log (para ver el historial de cambios)
+git log --decorate (incluye información de las ramas donde están los cambios)
+git log --graph (para ver la situación de las ramas y commits en modo gráfico)
+git log --oneline (para que no muestre las descripciones megalargas)
+git log --all (para que lo muestre todo)
+git branch (para saber las ramas que tenemos en el proyecto)
+git branch <nombre rama> (crear una rama: minusculas y podemos usar guiones)
+git branch -d <nombre rama> (eliminar una rama que no tiene información sin hacer el merge en master)
+git branch -D <nombre rama> (eliminar una rama sin mirar si tiene o no la información hecha en el merge de master)
+git checkout <nombre rama> (para cambiar a la rama)
+git checkout -b <nombre rama> (para crear una rama y cambiar a ella directamente)
+git merge <rama a fusionar en master> (primero ponerse en la rama master y luego fusionar las ramas)
+git gc (git almacena todos los cambios que hacemos y se va acumulando, se puede eliminar esa basura con el comando gc)
+
+
+
+NOTAS
+-----
+Siempre antes de comenzar a trabajar es importante hacer un PULL para descargar los cambios que otros hayan subido
+Fork: para hacerte una copia de un repositorio de otro usuario en tu cuenta y luego modificarlo
+Pull request:  para que se fusione las modificaciones de nuestro fork en el repositorio original del que hemos hecho el fork
+Issue: Para que te vayan diciendo los usuarios los errores o sugerencias. En un commit si ponemos #<numero de issue> se puede referenciar, y en el commit si pones "Closes #<numero issue>" cierra el issue directamente
+Para hacerse una página personal en github, debe ser nombredeusuario.github.io, y hay subir los ficheros html o usar jekyll
+Jekyll necesita tener instalado en la maquina ruby, recomendable en linux y mac, para windows primero instalar gywin
